@@ -12,10 +12,10 @@ public final class GameRegistry {
     static {
         List<GameEntry> games = new ArrayList<>();
 
-        games.add(new GameEntry(
-                "template-game",
-                "Template Game",
-                TemplateGame::new
+        games.add(0, new GameEntry(
+            "template-game",
+            "Cast",
+            TemplateGame::new
         ));
 
         GAMES = Collections.unmodifiableList(games);
